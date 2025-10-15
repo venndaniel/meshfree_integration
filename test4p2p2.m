@@ -1,5 +1,6 @@
 % code for the test of Subsection 4.2.2
 % compute the integral of a singular function on a paraboloid
+% The number of points (Nt) must be changed to produce values in Table 4
 
 % set plots to LaTex
 set(groot,'defaulttextinterpreter','latex'); 

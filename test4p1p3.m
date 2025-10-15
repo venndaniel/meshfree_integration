@@ -1,6 +1,7 @@
 % code for the test of Subsection 4.1.3
 % integrates on a genus-2 surface by splitting it into two subdomains with
 % boundary
+% The number of points (Nt) must be changed to produce values in Table 3
 
 % LaTex for plots
 set(groot,'defaulttextinterpreter','latex'); 

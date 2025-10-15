@@ -1,6 +1,7 @@
 % code for the test of Subsection 4.1.1
 % integrates a logarithm on the unit circle
 % numbers are recorded and plotted in fig4_code.m
+% The number of points (Nt) must be changed to produce values in Figure 4
 
 % set plots to LaTex
 set(groot,'defaulttextinterpreter','latex'); 

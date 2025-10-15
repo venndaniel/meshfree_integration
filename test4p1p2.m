@@ -1,6 +1,7 @@
 % code for the test of Subsection 4.1.2
 % integrates on a genus-2 surface with Voronoi cell subdomains
 % also includes code for a comparison to integrating via triangulation
+% The number of points (Nt) must be changed to produce values in Table 2
 
 % LaTex for plots
 set(groot,'defaulttextinterpreter','latex'); 
@@ -23,7 +24,7 @@ plot_patch = false; % show surface patch while computing
 
 
 Npp = 100; % number of Voronoi cells
-Nt = Npp*80; % total number of points
+Nt = 8000; % total number of points
 wmax = 11; % total number of Fourier basis functions per patch is (2*wmax + 1)^2
 q = 5; %5
 T = 5; %5 (1 is osc width of domain)
