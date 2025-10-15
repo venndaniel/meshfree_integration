@@ -79,13 +79,16 @@ erravg = [2.16E-02
 1.56E-02
 ];
 
+
+% Create plot
 loglog(n73, err73, 'o-');
 hold on;
-plot(n103, err103, 'o-');
-plot(ntri, errtri, 'o-');
-plot(ntri, erravg, 'o-');
+plot(n103, err103, '+-');
+plot(ntri, errtri, 'x-');
+plot(ntri, erravg, 'square-');
 
-legend('Meshfree: $q=7/3$', 'Meshfree: $q=10/3$', 'Triangulation', 'Point Cloud Average');
+legend(["Meshfree: $q=7/3$", "Meshfree: $q=10/3$", "Triangulation", ...
+    "Point Cloud Average"], 'Location', 'southeast');
 grid on;
 title('Surface Integral Convergence Test')
 xlabel('Number of Points/Vertices')
