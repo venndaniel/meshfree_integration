@@ -74,7 +74,7 @@ xsn = xs(ninds); ysn = ys(ninds); zsn = zs(ninds);
 % normal vectors to surface on boundary
 [nxp, nyp, nzp] = nml(xp, yp, zp, phix, phiy, phiz);
 ndot = [nxp nyp nzp]*p';
-% tangent vectors to boundary curves
+% co-normal vectors to boundary curves
 tx = p(1) - ndot.*nxp; ty = p(2) - ndot.*nyp; tz = p(3) - ndot.*nzp;
 tn = vecnorm([tx, ty, tz], 2, 2);
 tx = tx./tn; ty = ty./tn; tz = tz./tn;
@@ -149,7 +149,7 @@ Vb = di'.*exp(1i*(xp.*wx' + yp.*wy' + zp.*wz'));
 sp = s(xp, yp, zp); 
 sxp = sx(xp, yp, zp); syp = sy(xp, yp, zp); szp = sz(xp, yp, zp);
 
-% tangent derivative values
+% co-normal derivative values
 Vtnaive = 1i*(tx.*wx' + ty.*wy' + tz.*wz').*Vb;
 Vt = [Vtnaive (1i*(tx.*wx' + ty.*wy' + tz.*wz').*sp + ...
     (tx.*sxp + ty.*syp + tz.*szp)).*Vb];
