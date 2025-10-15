@@ -103,7 +103,7 @@ weights = zeros(Nt, 1); % store integration weights
 % choice of "neigh" is sufficient
 max_corners = 0; 
 for ppind = 1:Npp
-    ppind % current Voronoi cell index
+    "Voronoi Cell: " + ppind + " of " + Npp % current Voronoi cell index
     inds1 = find(cind==ppind); % get indices of points in this cell
     if plot_patch % show patch if plot_patch has been set to true
         scatter3(xs(inds1), ys(inds1), zs(inds1), 10, 'b', 'filled');
