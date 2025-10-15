@@ -1,6 +1,6 @@
 # Meshfree Surface Integration
 
-This repository contains code for the numerical tests in "High-Order Meshfree Surface Integration, Including Singular Integrants". A 4.8 million element mesh of the surface used for the tests of Subsection 4.1 is also included. Please see the cited paper listed under "Citation" for a more detailed description of the method and tests.
+This repository contains code for the numerical tests in "High-Order Meshfree Surface Integration, Including Singular Integrants". A 4.8 million vertex mesh of the surface used for the tests of Subsection 4.1 is also included. Please see the cited paper listed under "Citation" for a more detailed description of the method and tests.
 
 ## File Names
 The test files for each Subsection are named so that testXpYpZ.m corresponds to Subsection X.Y.Z.
