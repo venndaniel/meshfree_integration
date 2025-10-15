@@ -14,7 +14,7 @@ The test files are set up to generate a single value corresponding to one point 
 ## Citation
 
     @article{vennruuth2025,
-        title={High-Order Meshfree Surface Integration, Including Singular Functions
+        title={High-Order Meshfree Surface Integration, Including Singular Integrands
         Problems}, 
         author={Daniel R. Venn and Steven J. Ruuth},
         year={2025},
