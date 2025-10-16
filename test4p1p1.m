@@ -14,7 +14,8 @@ set(groot, 'defaultAxesTickLabelInterpreter','latex');
 set(groot, 'defaultLegendInterpreter','latex')
 rng('default');
 
-x2ex = 2.458814705060679;
+% "exact" value obtained with 4.8 million vertex mesh
+x2ex = 2.458814705060679; 
 
 sur_tol = 1e-14; % tolerance for placing point on surface
 
